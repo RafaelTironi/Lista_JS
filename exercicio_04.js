@@ -6,9 +6,10 @@ Ao final, o programa deve mostrar os números em ordem decrescente.
 */
 
 function ordem_valor() {
-let numero = []
-    for (i = 0; i < 5; i++) {
-
+    let numeros = []
+    for (i = 0; i < 4; i++) {
+        let numero = parseInt(prompt("Digite um número:"));
+        numeros.push(numero);
     }
 
 };
