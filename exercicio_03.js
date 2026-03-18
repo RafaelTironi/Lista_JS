@@ -53,4 +53,4 @@ function balanco() {
     }
 }
 
-balanco();
+//balanco();
