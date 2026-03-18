@@ -16,5 +16,4 @@ function foguete_nasa() {
 };
 
 
-foguete_nasa();
-c
+//foguete_nasa();
