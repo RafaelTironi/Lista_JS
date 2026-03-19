@@ -15,42 +15,29 @@ O programa também deverá informar se a empresa teve:
 
 
 function balanco() {
+    let ganhoAnual = 0;
+    let gastoAnual = 0;
 
-    let soma = 0
-    let soma2 = 0
-    let numero = 0
-    let numero2 = 0
-    let saldo = 0
-    for (let i = 0; i <= 12; i++) {
+    for (let i = 1; i <= 12; i++) {
+        let ganho = parseFloat(prompt("Digite o ganho bruto do mês " + i + ":"));
+        let gasto = parseFloat(prompt("Digite os gastos do mês " + i + ":"));
 
-        let numero = parseFloat(prompt("Informe o ganho bruto deste mês:"));
+        ganhoAnual += ganho;
+        gastoAnual += gasto;
+    }
 
-        if (!isNaN(numero)) {
-            soma += numero;
-        } else {
-            console.log("Ganho bruto:" + soma);
-        }
+    let saldo = ganhoAnual - gastoAnual;
 
-        let numero2 = parseFloat(prompt("Informe os gastos deste mês:"));
+    alert("Ganho bruto anual: " + ganhoAnual);
+    alert("Gasto anual: " + gastoAnual);
+    alert("Saldo financeiro anual: " + saldo);
 
-        if (!isNaN(numero2)) {
-            soma2 += numero2;
-        } else {
-            console.log("Gasto:" + soma2);
-        }
-
-    };
-
-    saldo = soma - soma2
-
-    console.log("Ganho bruto anual: " + soma);
-    console.log("Gasto anual: " + soma2);
-    console.log("O saldo final da empresa é de R$" + saldo)
-    if ((soma) > (soma2)) {
-        console.log("Seu saldo é positivo")
+    if (saldo > 0) {
+        alert("A empresa teve LUCRO");
+    } else if (saldo < 0) {
+        alert("A empresa teve PREJUÍZO");
     } else {
-        console.log("Seu saldo é negativo")
+        alert("A empresa ficou no ZERO");
     }
 }
-
 //balanco();
