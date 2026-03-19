@@ -17,6 +17,5 @@ function ordem_valor() {
 
     console.log(numeros);
 
-
 };
 
