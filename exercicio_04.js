@@ -12,15 +12,13 @@ function ordem_valor() {
         let numero = parseInt(prompt("Digite um número:"));
         numeros.push(numero);
 
-        
-
         numeros.sort();
         numeros.reverse();
     };
-    
+
     console.log(numeros);
 
 
 };
 
-ordem_valor();
+//ordem_valor();
