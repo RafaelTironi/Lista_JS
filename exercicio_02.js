@@ -15,5 +15,3 @@ function foguete_nasa() {
     console.log("Lançamento realizado");
 };
 
-
-//foguete_nasa();

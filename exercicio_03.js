@@ -40,4 +40,3 @@ function balanco() {
         alert("A empresa ficou no ZERO");
     }
 }
-//balanco();

@@ -8,7 +8,7 @@ O programa deverá:
 ➔ Mostre o valor final no console.
 */
 
-function atividade5() {
+function transformador_par_impar() {
     let impar = 0;
     let par = 0;
     let numero = parseFloat(prompt("Insira um número: "));
@@ -25,4 +25,3 @@ function atividade5() {
     }
 
 }
-//atividade5();
