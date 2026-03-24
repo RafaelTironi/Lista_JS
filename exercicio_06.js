@@ -19,6 +19,6 @@ function alfabeto() {
     ) console.log("A letra digitada é uma vogal!")
     else (
         console.log("A letra digitada é uma consoante!")
-    )
+    );
 
 }

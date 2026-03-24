@@ -19,7 +19,7 @@ correspondente.
 
 */
 
-function tabaela_piccole (){
+function tabela_piccole (){
 
     let codigo = prompt("Digite uma letra de a até i")
 
